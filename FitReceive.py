@@ -3,11 +3,13 @@ from string import *
 import sys
 import time
 
+# The server and client MUST use the same port number
 host=''
 port = 42524
 s = socket(AF_INET,SOCK_DGRAM)
 s.bind((host,port))
 
+# The server and client MUST use the same buffer size
 addr = (host,port)
 buf = 8192
 
